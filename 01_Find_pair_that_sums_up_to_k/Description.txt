@@ -1,0 +1,5 @@
+Find pair that sums up to k
+
+Given an array of integers "arr" and an integer "k", create a
+boolean function that checks if there exist two elements in arr
+such that we get "k" when we add them together.
