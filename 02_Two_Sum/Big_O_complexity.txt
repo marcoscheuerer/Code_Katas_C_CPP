@@ -1,0 +1,23 @@
+Excellent time/space-complexity:
+
+O(1)        - Constant
+
+Good to bad time/space-complexity:
+
+Polynomial      N ^ X   Basis is dynamical variable
+
+O(LogN)     - Logarithmic       => good
+O(N)        - Linear            => fair
+O(NLogN)    - Linearithmic      => bad
+O(N^2)      - Quadratic         => horrible
+O(N^3)      - Cubic             => horrible
+
+
+Horrible time/space-complexity:
+
+Exponential     X ^ N   Exponent is dynamical variable
+
+O(2^n)      - Exponential       e.g. 2^5 = 2 * 2 * 2 * 2 * 2
+O(n!)       - Factorial         e.g. 5!  = 5 * 4 * 3 * 2 * 1
+O(n^n)      - Exponential       e.g. 5^5 = 5 * 5 * 5 * 5 * 5
+

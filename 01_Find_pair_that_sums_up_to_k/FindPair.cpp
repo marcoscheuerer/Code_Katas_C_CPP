@@ -1,13 +1,11 @@
 #include "FindPair.hpp"
+#include <algorithm>
+#include <iostream>
 
-/**
- * @brief Finds the pair in an array which sum is k
- *
- * @param arr Array of integers
- * @param k The result of the addition of 2 values in the array
- * @return true If the values are found in array
- * @return false If the values are not in array
- */
+// 1. Solution: not so good
+// Time complexity:  O(n²) -> two loops to iterate
+// Space complexity: O(1)
+/*
 bool findPair(std::vector<std::int32_t> arr, std::int32_t k)
 {
     for (std::size_t i = 0; i < arr.size(); i++)
@@ -20,4 +18,19 @@ bool findPair(std::vector<std::int32_t> arr, std::int32_t k)
     }
 
     return false;
+}
+*/
+
+// 2. Solution:
+bool findPair(std::vector<std::int32_t> arr, std::int32_t k)
+{
+    std::sort(arr.begin(), arr.end());
+
+    std::uint32_t left = 0;
+    std::uint32_t right = arr.size() - 1;
+
+    if (arr[left] + arr[right] == k)
+    {
+
+    }
 }
